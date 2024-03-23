@@ -317,3 +317,43 @@ Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/jenetmariska/belajarGIT.git
    a4b4f84..56b8948  main -> main
+
+   User@DESKTOP-P56RRMB MINGW64 ~/Desktop/BelajarGIT (main)
+$ git push origin-all
+fatal: 'origin-all' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+User@DESKTOP-P56RRMB MINGW64 ~/Desktop/BelajarGIT (main)
+$ git push origin -all
+error: did you mean `--all` (with two dashes)?
+
+User@DESKTOP-P56RRMB MINGW64 ~/Desktop/BelajarGIT (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.27 KiB | 92.00 KiB/s, done.
+From https://github.com/jenetmariska/belajarGIT
+ * branch            main       -> FETCH_HEAD
+   56b8948..bc18592  main       -> origin/main
+Updating 56b8948..bc18592
+Fast-forward
+ README.md | 201 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 201 insertions(+)
+
+User@DESKTOP-P56RRMB MINGW64 ~/Desktop/BelajarGIT (main)
+$ git push origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jenetmariska/belajarGIT.git
+ * [new branch]      Tugas-css -> Tugas-css
+ * [new branch]      Tugas-finalProject -> Tugas-finalProject
+ * [new branch]      Tugas-git -> Tugas-git
+ * [new branch]      Tugas-html -> Tugas-html
+ * [new branch]      Tugas-js -> Tugas-js
+ * [new branch]      Tugas-midProject -> Tugas-midProject
+ * [new branch]      Tugas-php -> Tugas-php
+
