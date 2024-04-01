@@ -53,6 +53,10 @@ main {
 }
 
 .blog {
+    background-color: #fff; /* Warna latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
     text-align: center; /* Penataan teks ke tengah */
 }
 
@@ -82,7 +86,7 @@ main {
 }
 
 .gallery h2 {
-    color: #8e44ad; /* Warna teks ungu */
+    color: #fff; /* Warna teks ungu */
 }
 
 .gallery-container {
@@ -106,6 +110,10 @@ main {
 }
 
 .contact {
+    background-color: #fff; /* Warna latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
     text-align: center; /* Penataan teks ke tengah */
 }
 
