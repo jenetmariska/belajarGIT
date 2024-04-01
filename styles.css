@@ -1,18 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Putih */
-    color: #333333; /* Warna teks gelap */
+    margin: 0;
+    padding: 0;
+    background-color: #6c5ce7; /* Warna latar belakang biru */
 }
 
 header {
-    background-color: #6a5acd; /* Biru Ungu (SlateBlue) */
+    background-color: #a29bfe; /* Warna latar belakang ungu */
+    color: #fff; /* Warna teks putih */
     padding: 20px;
-    color: #ffffff; /* Warna teks putih */
+}
+
+header h2 {
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -23,24 +27,24 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* Warna teks putih */
+    color: #fff; /* Warna teks putih */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.main {
+main {
     padding: 20px;
 }
 
 .homepage {
-    background-color: #6a5acd; /* Biru Ungu (SlateBlue) */
-    color: #ffffff; /* Warna teks putih */
+    background-color: #fff; /* Warna latar belakang putih */
     padding: 20px;
-    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
 .homepage h2 {
-    margin-bottom: 10px;
+    color: #6c5ce7; /* Warna teks biru */
+}
+
+.homepage p {
+    color: #333; /* Warna teks hitam */
 }
