@@ -138,3 +138,17 @@ main {
 .contact a:hover {
     text-decoration: underline;
 }
+
+.article {
+    text-align: justify; /* Penataan teks rata kiri dan kanan */
+    max-width: 800px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Pusatkan konten */
+}
+
+.article h2 {
+    color: #8e44ad; /* Warna teks ungu */
+}
+
+.article p {
+    margin-bottom: 20px; /* Ruang antara paragraf */
+}
