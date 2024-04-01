@@ -51,3 +51,28 @@ main {
 .homepage p {
     color: #333; /* Warna teks hitam */
 }
+
+.blog {
+    text-align: center; /* Penataan teks ke tengah */
+}
+
+.blog h2 {
+    color: #8e44ad; /* Warna teks ungu */
+}
+
+.article-list {
+    display: flex;
+    justify-content: center; /* Penataan link ke tengah */
+    margin-top: 20px;
+}
+
+.article-list a {
+    color: #3498db; /* Warna teks biru */
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.article-list a:hover {
+    text-decoration: underline;
+}
