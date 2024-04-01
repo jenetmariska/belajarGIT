@@ -128,6 +128,9 @@ main {
 
 .contact li {
     margin-bottom: 10px;
+}
+
+.contact a {
     color: #333; /* Warna teks hitam */
     text-decoration: none;
 }
