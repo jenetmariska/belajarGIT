@@ -2,22 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6c5ce7; /* Warna latar belakang biru */
+    background-color: #8e44ad; /* Warna latar belakang ungu */
+    color: #fff; /* Warna teks putih */
 }
 
 header {
-    background-color: #a29bfe; /* Warna latar belakang ungu */
-    color: #fff; /* Warna teks putih */
+    background-color: #3498db; /* Warna latar belakang biru */
     padding: 20px;
+    text-align: center; /* Penataan teks ke tengah */
 }
 
-header h2 {
+header h1 {
     margin: 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center; /* Penataan menu ke tengah */
 }
 
 nav ul li {
@@ -39,10 +41,11 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    text-align: center; /* Penataan teks ke tengah */
 }
 
 .homepage h2 {
-    color: #6c5ce7; /* Warna teks biru */
+    color: #8e44ad; /* Warna teks ungu */
 }
 
 .homepage p {
