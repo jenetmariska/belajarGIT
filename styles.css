@@ -4,6 +4,13 @@ body {
     padding: 0;
     background-color: #988bc7; /* Warna latar belakang ungu */
     color: #fff; /* Warna teks putih */
+     /* Menjadikan gambar latar belakang */
+    background-image: url('gambar.jpg');
+    /* Mengatur ukuran dan tata letak gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    /* Membuat gambar latar belakang tetap di tempat */
+    background-attachment: fixed;
 }
 
 header {
@@ -12,6 +19,12 @@ header {
     text-align: center; /* Penataan teks ke tengah */
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Menambahkan lapisan transparan di atas gambar */
+}
 header h1 {
     margin: 0;
 }
