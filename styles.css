@@ -32,9 +32,11 @@ header {
 header h2 {
     margin: 0;
 }
+
 .header-text{
     text-align: left;
     font-size:60px;
+}
 
 nav ul {
     list-style-type: none;
