@@ -30,3 +30,23 @@ artikelLinks.forEach(function(link) {
         link.style.backgroundColor = 'transparent';
     });
 });
+
+// Ambil semua elemen gambar di galeri
+var galleryImages = document.querySelectorAll('.gallery-container img');
+
+// Tambahkan event listener ke setiap gambar di galeri
+galleryImages.forEach(function(image) {
+    // Ketika pengguna mengarahkan kursor ke gambar
+    image.addEventListener('mouseover', function() {
+        // Perbesar gambar
+        image.style.transform = 'scale(1.1)';
+        // Ganti transisi untuk membuat perubahan lebih halus
+        image.style.transition = 'transform 0.3s ease';
+    });
+
+    // Ketika pengguna meninggalkan gambar
+    image.addEventListener('mouseout', function() {
+        // Kembalikan gambar ke ukuran semula
+        image.style.transform = 'scale(1)';
+    });
+});
