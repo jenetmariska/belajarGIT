@@ -105,6 +105,10 @@ main {
 
 .gallery {
     text-align: center; /* Penataan teks ke tengah */
+     background-color: #fff; /* Warna latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
 .gallery h2 {
@@ -161,6 +165,10 @@ main {
     text-align: justify; /* Penataan teks rata kiri dan kanan */
     max-width: 800px; /* Lebar maksimum konten */
     margin: 0 auto; /* Pusatkan konten */
+     background-color: #fff; /* Warna latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
 .article h2 {
