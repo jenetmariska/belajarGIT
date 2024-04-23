@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #988bc7; /* Warna latar belakang ungu */
-    color: #fff; /* Warna teks putih */
+    color: #8e44ad; /* Warna teks ungu */
      /* Menjadikan gambar latar belakang */
     background-image: url('lake.jpg');
     /* Mengatur ukuran dan tata letak gambar latar belakang */
@@ -31,9 +31,10 @@ header {
 
 header h2 {
     margin: 0;
+}
+.header-text{
     text-align: left;
     font-size:60px;
-}
 
 nav ul {
     list-style-type: none;
