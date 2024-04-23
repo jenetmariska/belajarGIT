@@ -50,3 +50,20 @@ galleryImages.forEach(function(image) {
         image.style.transform = 'scale(1)';
     });
 });
+
+// Ambil semua tautan kontak
+var contactLinks = document.querySelectorAll('.contact a');
+
+// Tambahkan event listener ke setiap tautan kontak
+contactLinks.forEach(function(link) {
+    // Ketika pengguna mengklik tautan kontak
+    link.addEventListener('click', function(event) {
+        // Tampilkan pesan konfirmasi
+        var confirmation = confirm('Apakah Anda ingin menghubungi ' + link.textContent + '?');
+        
+        // Jika pengguna membatalkan konfirmasi, hentikan navigasi
+        if (!confirmation) {
+            event.preventDefault();
+        }
+    });
+});
