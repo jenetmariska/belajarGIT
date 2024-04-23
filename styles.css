@@ -74,6 +74,29 @@ main {
     color: #333; /* Warna teks hitam */
 }
 
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.3s, color 0.3s; /* Tambahkan transisi untuk perubahan warna dan perbesaran */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Efek perbesaran saat kursor melewati menu */
+.menu li:hover {
+    transform: scale(1.2); /* Perbesar ukuran menu */
+    color: blue; /* Ganti warna menu saat kursor melewati */
+}
+
 .blog {
     background-color: #fff; /* Warna latar belakang putih */
     padding: 20px;
