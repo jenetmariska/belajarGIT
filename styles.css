@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #988bc7; /* Warna latar belakang ungu */
+    background-color: #988bc7 (255, 255, 255, 0.8); /* Warna latar belakang ungu */
     color: #fff; /* Warna teks putih */
      /* Menjadikan gambar latar belakang */
     background-image: url('lake.jpg');
