@@ -1,28 +1,21 @@
-// Ambil elemen menu
-var menu = document.querySelector('nav');
+// Ambil semua elemen menu
+var menuItems = document.querySelectorAll('.menu li');
 
-// Tambahkan event listener ketika pengguna mengarahkan kursor ke bagian menu
-menu.addEventListener('mouseover', function() {
-    // Perbesar bagian menu
-    menu.style.transform = 'scale(1.1)';
-    // Ubah warna latar belakang menu
-    menu.style.backgroundColor = 'lightgray';
-    // Ubah warna teks menu
-    var menuItems = menu.querySelectorAll('a');
-    menuItems.forEach(function(item) {
-        item.style.color = 'black';
+// Tambahkan event listener untuk setiap elemen menu
+menuItems.forEach(function(item) {
+    // Ketika kursor melewati elemen menu
+    item.addEventListener('mouseover', function() {
+        // Perbesar ukuran menu
+        item.style.transform = 'scale(1.2)';
+        // Ganti warna menu
+        item.style.color = 'blue';
     });
-});
 
-// Tambahkan event listener ketika pengguna meninggalkan bagian menu
-menu.addEventListener('mouseout', function() {
-    // Kembalikan ukuran menu ke ukuran semula
-    menu.style.transform = 'scale(1)';
-    // Kembalikan warna latar belakang menu
-    menu.style.backgroundColor = '';
-    // Kembalikan warna teks menu
-    var menuItems = menu.querySelectorAll('a');
-    menuItems.forEach(function(item) {
-        item.style.color = '';
+    // Ketika kursor meninggalkan elemen menu
+    item.addEventListener('mouseout', function() {
+        // Kembalikan ukuran menu ke semula
+        item.style.transform = 'scale(1)';
+        // Kembalikan warna menu ke semula
+        item.style.color = 'black';
     });
 });
