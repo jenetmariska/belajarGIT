@@ -1,69 +1,28 @@
- // penambahan interaktivitas dengan JavaScript
-    document.querySelector('.header-text').addEventListener('click', function() {
-        alert('Anda mengklik judul header!');
-    });
+// Ambil elemen menu
+var menu = document.querySelector('nav');
 
- // Fungsi untuk menampilkan pesan konfirmasi
-    function showConfirmation(artikel) {
-        var confirmation = confirm('Anda akan membuka artikel: ' + artikel + '. Lanjutkan?');
-        if (!confirmation) {
-            // Mencegah navigasi jika pengguna membatalkan konfirmasi
-            event.preventDefault();
-        }
-    }
-
-// Mendapatkan semua tautan artikel
-var artikelLinks = document.querySelectorAll('.blog .article-list a');
-
-// Menambahkan event listener untuk setiap tautan artikel
-artikelLinks.forEach(function(link) {
-    // Ketika kursor diarahkan ke tautan artikel
-    link.addEventListener('mouseover', function() {
-        // Menambahkan efek animasi (misalnya, perubahan warna latar belakang)
-        link.style.backgroundColor = '#f0f0f0';
-        link.style.transition = 'background-color 0.3s ease';
-    });
-
-    // Ketika kursor meninggalkan tautan artikel
-    link.addEventListener('mouseout', function() {
-        // Menghapus efek animasi
-        link.style.backgroundColor = 'transparent';
+// Tambahkan event listener ketika pengguna mengarahkan kursor ke bagian menu
+menu.addEventListener('mouseover', function() {
+    // Perbesar bagian menu
+    menu.style.transform = 'scale(1.1)';
+    // Ubah warna latar belakang menu
+    menu.style.backgroundColor = 'lightgray';
+    // Ubah warna teks menu
+    var menuItems = menu.querySelectorAll('a');
+    menuItems.forEach(function(item) {
+        item.style.color = 'black';
     });
 });
 
-// Ambil semua elemen gambar di galeri
-var galleryImages = document.querySelectorAll('.gallery-container img');
-
-// Tambahkan event listener ke setiap gambar di galeri
-galleryImages.forEach(function(image) {
-    // Ketika pengguna mengarahkan kursor ke gambar
-    image.addEventListener('mouseover', function() {
-        // Perbesar gambar
-        image.style.transform = 'scale(1.1)';
-        // Ganti transisi untuk membuat perubahan lebih halus
-        image.style.transition = 'transform 0.3s ease';
-    });
-
-    // Ketika pengguna meninggalkan gambar
-    image.addEventListener('mouseout', function() {
-        // Kembalikan gambar ke ukuran semula
-        image.style.transform = 'scale(1)';
-    });
-});
-
-// Ambil semua tautan kontak
-var contactLinks = document.querySelectorAll('.contact a');
-
-// Tambahkan event listener ke setiap tautan kontak
-contactLinks.forEach(function(link) {
-    // Ketika pengguna mengklik tautan kontak
-    link.addEventListener('click', function(event) {
-        // Tampilkan pesan konfirmasi
-        var confirmation = confirm('Apakah Anda ingin menghubungi ' + link.textContent + '?');
-        
-        // Jika pengguna membatalkan konfirmasi, hentikan navigasi
-        if (!confirmation) {
-            event.preventDefault();
-        }
+// Tambahkan event listener ketika pengguna meninggalkan bagian menu
+menu.addEventListener('mouseout', function() {
+    // Kembalikan ukuran menu ke ukuran semula
+    menu.style.transform = 'scale(1)';
+    // Kembalikan warna latar belakang menu
+    menu.style.backgroundColor = '';
+    // Kembalikan warna teks menu
+    var menuItems = menu.querySelectorAll('a');
+    menuItems.forEach(function(item) {
+        item.style.color = '';
     });
 });
